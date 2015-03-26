@@ -13,6 +13,6 @@ feature 'prepares the board' do
     board = Board.new
     ship = Ship.new
     board.place(column: :A, row: 0, ship: ship)
-    expect(board.retrieve(column: :A, row: 1)).to not_be ship
+    expect(board.retrieve(column: :A, row: 1)).not_to be ship
   end
 end
