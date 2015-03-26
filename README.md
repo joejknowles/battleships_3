@@ -7,10 +7,6 @@ When all of one player's ships have been sunk the game finishes and the player w
 #User stories#
 
 As a player<br>
-So that I can have a game<br>
-I would like there to be a grid on the board<br>
-
-As a player<br>
 So that I can prepare for the game<br>
 I would like to place a ship in a board location<br>
 
@@ -31,6 +27,11 @@ So that I know when to finish playing<br>
 I would like to know when I have won or lost<br>
 
 #Non-MVP
+
+
+As a player<br>
+So that I can have a game<br>
+I would like there to be a 10 * 10 grid on the board<br>
 
 As a player<br>
 So that I can win the game<br>
