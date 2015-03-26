@@ -8,19 +8,15 @@ When all of one player's ships have been sunk the game finishes and the player w
 
 As a player<br>
 So that I can have a game<br>
-I would like there to be a grid<br>
+I would like there to be a grid on the board<br>
 
 As a player<br>
 So that I can prepare for the game<br>
 I would like to place a ship in a board location<br>
 
 As a player<br>
-So that I can play a more interesting game<br>
-I would like to have a range of ship sizes to choose from<br>
-
-As a player<br>
-So that I can create a layout of ships to fox my opponent<br>
-I would like to be able to choose the directions my ships face<br>
+So that I can win the game<br>
+I would like to be able to fire at my opponents board<br>
 
 As a player<br>
 So that I can have a coherent game<br>
@@ -31,12 +27,10 @@ So that I can have a coherent game<br>
 I would like ships to be constrained not to overlap<br>
 
 As a player<br>
-So that I can win the game<br>
-I would like to be able to fire at my opponents board<br>
-
-As a player<br>
 So that I know when to finish playing<br>
 I would like to know when I have won or lost<br>
+
+#Non-MVP
 
 As a player<br>
 So that I can consider my next shot<br>
@@ -45,3 +39,11 @@ I would like an overview of my hits and misses so far<br>
 As a player<br>
 So that I can play against a human opponent<br>
 I would like to play a two-player game<br>
+
+As a player<br>
+So that I can play a more interesting game<br>
+I would like to have a range of ship sizes to choose from<br>
+
+As a player<br>
+So that I can create a layout of ships to fox my opponent<br>
+I would like to be able to choose the directions my ships face<br>
