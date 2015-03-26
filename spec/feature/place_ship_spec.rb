@@ -21,4 +21,10 @@ feature 'prepares the board' do
       board.place(column: :K, row: 2, ship: ship)
     end.to raise_error 'not on the board'
   end
+
+  scenario 'ships cannot overlap' do
+    expect do
+      2.times { board.place(column: :A, row: 0, ship: ship) }
+    end.to raise_error 'Ships Cannot Overlap'
+  end
 end
