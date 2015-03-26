@@ -1,6 +1,4 @@
 class Board
-  #attr_reader :grid
-
   def initialize
     @grid = { A: [] }
   end
@@ -19,7 +17,6 @@ class Board
 
   private
 
-  def grid
-    @grid
+  attr_reader :grid
   end
 end

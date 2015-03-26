@@ -24,4 +24,9 @@ describe Board do
     expect(subject.retrieve column: :A, row: 1).to eq '*'
   end
 
+  it 'will not accept ship outside of the board (2x2)' do
+    expect do
+      subject.place(column: :K, row: 2, ship: :ship)
+    end.to raise_error 'not on the board'
+  end
 end
