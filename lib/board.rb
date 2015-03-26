@@ -1,9 +1,11 @@
 class Board
   def initialize
-    @grid = { A: [] }
+    @grid = { A: [' ', ' '], B: [' ', ' '] }
   end
 
   def place(options)
+    fail 'not on the board' unless (:A..:B).include?(options[:column])
+    fail 'not on the board' unless (0..1).include?(options[:row])
     grid[options[:column]][options[:row]] = options[:ship]
   end
 
@@ -13,7 +15,7 @@ class Board
 
   def fire(options)
     location = grid[options[:column]][options[:row]]
-    if !location.nil?
+    if !location.is_a?(String)
       location.hit
       grid[options[:column]][options[:row]] = '*'
     else

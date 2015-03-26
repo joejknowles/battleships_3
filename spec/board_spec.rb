@@ -31,7 +31,7 @@ describe Board do
     subject.fire(column: :A, row: 1)
   end
 
-  xit 'will not accept ship outside of the board (2x2)' do
+  it 'raises error when invalid ship location given' do
     expect do
       subject.place(column: :K, row: 2, ship: :ship)
     end.to raise_error 'not on the board'
