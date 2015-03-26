@@ -12,11 +12,16 @@ class Board
   end
 
   def fire(options)
-    grid[options[:column]][options[:row]] = '*'
+    location = grid[options[:column]][options[:row]]
+    if !location.nil?
+      location.hit
+      grid[options[:column]][options[:row]] = '*'
+    else
+      grid[options[:column]][options[:row]] = 'o'
+    end
   end
 
   private
 
   attr_reader :grid
-  end
 end

@@ -16,7 +16,7 @@ feature 'prepares the board' do
     expect(board.retrieve(column: :A, row: 1)).not_to be ship
   end
 
-  scenario 'ship cannot be placed outside of the board (2x2)' do
+  xscenario 'ship cannot be placed outside of the board (2x2)' do
     expect do
       board.place(column: :K, row: 2, ship: ship)
     end.to raise_error 'not on the board'

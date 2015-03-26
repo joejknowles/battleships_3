@@ -21,10 +21,17 @@ describe Board do
 
   it 'receives a location and fires at it' do
     subject.fire column: :A, row: 1
-    expect(subject.retrieve column: :A, row: 1).to eq '*'
+    expect(subject.retrieve column: :A, row: 1).to eq 'o'
   end
 
-  it 'will not accept ship outside of the board (2x2)' do
+  it 'sends hit message to ship' do
+    ship = double :ship
+    subject.place(column: :A, row: 1, ship: ship)
+    expect(ship).to receive(:hit)
+    subject.fire(column: :A, row: 1)
+  end
+
+  xit 'will not accept ship outside of the board (2x2)' do
     expect do
       subject.place(column: :K, row: 2, ship: :ship)
     end.to raise_error 'not on the board'
