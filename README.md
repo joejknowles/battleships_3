@@ -12,7 +12,11 @@ I would like to place a ship in a board location<br>
 
 As a player<br>
 So that I can win the game<br>
-I would like to be able to fire at a board<br>
+I would like to be able to fire at the board<br>
+
+As a player<br>
+So that I can win the game<br>
+I would like to be able to fire at a ship on a board<br>
 
 As a player<br>
 So that I can have a coherent game<br>
