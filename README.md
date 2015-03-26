@@ -16,7 +16,7 @@ I would like to place a ship in a board location<br>
 
 As a player<br>
 So that I can win the game<br>
-I would like to be able to fire at my opponents board<br>
+I would like to be able to fire at a board<br>
 
 As a player<br>
 So that I can have a coherent game<br>
@@ -31,6 +31,10 @@ So that I know when to finish playing<br>
 I would like to know when I have won or lost<br>
 
 #Non-MVP
+
+As a player<br>
+So that I can win the game<br>
+I would like to be able to fire at my opponents board<br>
 
 As a player<br>
 So that I can consider my next shot<br>
